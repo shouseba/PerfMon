@@ -20,7 +20,7 @@ namespace THPerfMon.Methods
 
             var currentAvailableRam = ramCounter.NextValue() + "Mb";
 
-            log.InfoFormat("\t\tAvailable RAM: {0}", currentAvailableRam);
+            log.InfoFormat("\tAvailable RAM: {0}", currentAvailableRam);
 
 
         }
@@ -34,13 +34,13 @@ namespace THPerfMon.Methods
             CounterSample cs2 = cpuCounter.NextSample();
             float finalCpuCounter = CounterSample.Calculate(cs1, cs2);
 
-            log.InfoFormat("\t\tCPU Usage: {0}", finalCpuCounter);
+            log.InfoFormat("\tCPU Usage: {0}", finalCpuCounter);
         }
 
         public static void GetDiskUsage()
         {
             PerformanceCounter diskCounter = new PerformanceCounter("PhysicalDisk", "Avg. Disk Queue Length", "_Total");
-            log.InfoFormat("\t\tAverage Disk Queue Length: {0}", diskCounter.NextValue());
+            log.InfoFormat("\tAverage Disk Queue Length: {0}", diskCounter.NextValue());
         }
     }
 }

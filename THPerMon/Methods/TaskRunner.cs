@@ -40,15 +40,12 @@ namespace THPerfMon.Methods
                 switch (definition)
                 {
                     case Constants.Performance.CPUUSAGETOTAL:
-                        log.Info("Getting CPU Total Usage");
                         Performance.GetCpuUsage();
                         break;
                     case Constants.Performance.DISKUSUAGETOTAL:
-                        log.Info("Getting Disk I/O Total Usage");
                         Performance.GetDiskUsage();
                         break;
                     case Constants.Performance.RAMUSUAGETOTAL:
-                        log.Info("Getting Ram Total Usuage");
                         Performance.GetAvailableRam();
                         break;
                     default:

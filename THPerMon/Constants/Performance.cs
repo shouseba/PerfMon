@@ -8,8 +8,8 @@ namespace THPerfMon.Constants
 {
     public static class Performance
     {
-        public const string CPUUSAGETOTAL = "CPU-USAGE-TOTAL";
-        public const string RAMUSUAGETOTAL = "RAM-USAGE-TOTAL";
-        public const string DISKUSUAGETOTAL = "DISK-USAGE-TOTAL";
+        public const string CPUUSAGETOTAL = "CPU-STATS";
+        public const string RAMUSUAGETOTAL = "RAM-STATS";
+        public const string DISKUSUAGETOTAL = "DISK-STATS";
     }
 }
